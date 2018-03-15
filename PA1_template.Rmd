@@ -1,5 +1,7 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
+author: "Suman Gangopadhyay"
+date: "March 15, 2018"
 output: 
   html_document:
     keep_md: true
@@ -154,8 +156,4 @@ ggplot(avg.steps.per.int.WeWd, aes(interval,steps)) +
         geom_line(colour = "blue") + 
         facet_wrap(~dayType,ncol = 1) +
         labs(y="Number of steps")
-```
-```{r}
-require(markdown)
-markdownToHTML("PA1_template.md", "PA1_template.html")
 ```

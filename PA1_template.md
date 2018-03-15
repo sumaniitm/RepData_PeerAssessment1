@@ -1,5 +1,7 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
+author: "Suman Gangopadhyay"
+date: "March 15, 2018"
 output: 
   html_document:
     keep_md: true
@@ -190,15 +192,3 @@ ggplot(avg.steps.per.int.WeWd, aes(interval,steps)) +
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-22-1.png)<!-- -->
-
-```r
-require(markdown)
-```
-
-```
-## Loading required package: markdown
-```
-
-```r
-markdownToHTML("PA1_template.md", "PA1_template.html")
-```
