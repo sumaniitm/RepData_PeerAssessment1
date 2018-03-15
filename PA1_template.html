@@ -279,9 +279,8 @@ colnames(avg.steps.per.int.WeWd)[2] &lt;- &quot;steps&quot;</code></pre>
 <ol start="8" style="list-style-type: decimal">
 <li>Plot the data</li>
 </ol>
-<pre class="r"><code>require(ggplot2)</code></pre>
-<pre><code>## Loading required package: ggplot2</code></pre>
-<pre class="r"><code>ggplot(avg.steps.per.int.WeWd, aes(interval,steps)) + 
+<pre class="r"><code>require(ggplot2)
+ggplot(avg.steps.per.int.WeWd, aes(interval,steps)) + 
         geom_line(colour = &quot;blue&quot;) + 
         facet_wrap(~dayType,ncol = 1) +
         labs(y=&quot;Number of steps&quot;)</code></pre>

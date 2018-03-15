@@ -27,7 +27,7 @@ steps.per.day.withNA.df <-
 hist(steps.per.day.withNA.df$steps,main = "Total number of steps each day",xlab = "steps per day")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 3. Mean total number of steps taken per day is `mean(steps.per.day.withNA.df$steps)` = 9354.23
 4. Median of total number of steps taken per day is `median(steps.per.day.withNA.df$steps)` = 10395
@@ -48,7 +48,7 @@ plot(avg.steps.per.int.df$interval,avg.steps.per.int.df$avg_steps,
      ylab="Steps",xlab="interval",type="l",col="blue")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 3. The 5-minute interval, on average across all the days in the dataset, which contains the maximum number of steps is `avg.steps.per.int.df[which.max(avg.steps.per.int.df$avg_steps),1]` = 835
 
@@ -114,7 +114,7 @@ steps.per.day.withoutNA.df <-
 hist(steps.per.day.withoutNA.df$steps,main = "Total number of steps each day",xlab = "steps per day")
 ```
 
-![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 ## Are there differences in activity patterns between weekdays and weekends?
 1. First get the new variable indicating whether the date is weekend or weekday
@@ -184,4 +184,4 @@ ggplot(avg.steps.per.int.WeWd, aes(interval,steps)) +
         labs(y="Number of steps")
 ```
 
-![plot of chunk unnamed-chunk-22](figure/unnamed-chunk-22-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-22-1.png)<!-- -->
